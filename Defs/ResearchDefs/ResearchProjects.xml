@@ -104,7 +104,7 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>CAT_BasicButchering</defName>
+    <defName>CAT_Butchering</defName>
     <label>butchering</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>While properly butchering meat is a vast improvement over just eating a corpse directly, the process can still be refined. Simply pulling bodies apart with bare hands is both a tough and inefficient process. Creating a dedicated workbench equipped with proper tools is far better for harvesting as much meat as possible.</description>
