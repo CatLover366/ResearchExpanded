@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>CAT_Spark</defName>
+    <label>spark of ingenuity</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>The start of a glorious journey through the ages. The key to unlocking the future, formed from one errant thought.</description>
+    <baseCost>5</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+<!--Building-->
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicStructures</defName>
+    <label>basic structures</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Enough of working while exposed to the elements. Why not indulge in some of the basics of construction: simple walls and doors. They aren't exactly made to last, but they will protect you from the elements well enough.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Spark</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicFlooring</defName>
+    <label>basic flooring</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>A roof over your head and walls keeping the outdoors out is all well and good, but there is still one side of a room unaccounted for: the floor. Instead of having filth crunching underneath you all the time, one can simply lay down some wooden planks to not only liven up the place, but also keep your base hygienic.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicStructures</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Cat_Bridges</defName>
+    <label>bridges</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Unfortunately, certain terrain isn't stable enough for regular flooring. However, simply placing some supports in the ground allows for light flooring to be laid on such unstable areas, though it is a fair bit more expensive.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicStructures</li>
+      <li>CAT_BasicFlooring</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+<!--Temperature-->
+
+  <ResearchProjectDef>
+    <defName>CAT_Firemaking</defName>
+    <label>firemaking</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>A cornerstone of technological advancement. Fire has a multitude of uses even for an unadvanced society, from safely preparing food to being used to inflict grievous wounds.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Spark</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5.5</researchViewY>
+  </ResearchProjectDef>
+
+<!--Production-->
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicCrafting</defName>
+    <label>basic crafting</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While hands are a quite versatile tool, they can only go so far when it comes to more complex tasks. It would be far more effective to use those hands for creating tools that make working and killing easier.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Spark</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicButchering</defName>
+    <label>primitive butchering</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While eating raw corpses directly is... barely serviceable, it is highly nutrient inefficient and quite an unpleasant experience. It is far better to hew flesh from bone and properly butcher meat into separate chunks to either consume or prepare.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Spark</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicButchering</defName>
+    <label>butchering</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While properly butchering meat is a vast improvement over just eating a corpse directly, the process can still be refined. Simply pulling bodies apart with bare hands is both a tough and inefficient process. Creating a dedicated workbench equipped with proper tools is far better for harvesting as much meat as possible.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Spark</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+</Defs>
