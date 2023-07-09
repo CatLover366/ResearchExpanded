@@ -12,7 +12,7 @@
     <researchViewY>2.5</researchViewY>
   </ResearchProjectDef>
 
-<!--Building-->
+  <!--Building-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicStructures</defName>
@@ -57,7 +57,7 @@
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
-<!--Temperature-->
+  <!--Temperature-->
 
   <ResearchProjectDef>
     <defName>CAT_Firemaking</defName>
@@ -73,7 +73,7 @@
     <researchViewY>5.5</researchViewY>
   </ResearchProjectDef>
 
-<!--Production-->
+  <!--Production-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicCrafting</defName>
