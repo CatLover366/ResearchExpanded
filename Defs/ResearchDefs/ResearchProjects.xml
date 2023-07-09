@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!--Tech level sparks-->
+  <!--Tech level sparks-->
 
   <ResearchProjectDef>
     <defName>CAT_NeolithicSpark</defName>
@@ -108,7 +108,7 @@
     <researchViewY>2.5</researchViewY>
   </ResearchProjectDef>
 
-<!--Building-->
+  <!--Building-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicStructures</defName>
@@ -153,7 +153,7 @@
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
-<!--Temperature-->
+  <!--Temperature-->
 
   <ResearchProjectDef>
     <defName>CAT_Firemaking</defName>
