@@ -11,9 +11,9 @@
 
   <!-- Add spark prerequisites tag to all projects lacking any prerequisites -->
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ResearchProjectDef[techLevel = "Neolithic" and defName != "CAT_Spark"]/prerequisites[count(li) = 0]</xpath>
+    <xpath>/Defs/ResearchProjectDef[techLevel = "Neolithic" and defName != "CAT_NeolithicSpark"]/prerequisites[count(li) = 0]</xpath>
     <value>
-      <li>CAT_Spark</li>
+      <li>CAT_NeolithicSpark</li>
     </value>
   </Operation>
 </Patch>

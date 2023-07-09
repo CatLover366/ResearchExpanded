@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+<!--Tech level sparks-->
+
   <ResearchProjectDef>
-    <defName>CAT_Spark</defName>
-    <label>spark of ingenuity</label>
+    <defName>CAT_NeolithicSpark</defName>
+    <label>spark of knowledge</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>The start of a glorious journey through the ages. The key to unlocking the future, formed from one errant thought.</description>
     <baseCost>5</baseCost>
@@ -12,7 +14,101 @@
     <researchViewY>2.5</researchViewY>
   </ResearchProjectDef>
 
-  <!--Building-->
+  <ResearchProjectDef>
+    <defName>CAT_MedievalSpark</defName>
+    <label>spark of curiosity</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>A good foundation has been set, and large strides have been made, such that most natural predators cannot threaten you on their own. But while these primitive tools are good, they simply are not good enough. Why be satisfied with mere wood, when there is a bounty of stone and metal to exploit instead?</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>CAT_NeolithicSpark</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_IndustrialSpark</defName>
+    <label>spark of innovation</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>The bounty of the earth itself has been worked to your favor. Leaps and bounds of progress has been made for crafting and forging. However, the human mind and body can only go so far on its own. It is time to develop more advanced tools to assist with both production and data gathering.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>CAT_MedievalSpark</li>
+      <li>Smithing</li>
+      <li>ComplexFurniture</li>
+      <li>Stonecutting</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_SpacerSpark</defName>
+    <label>spark of wonder</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Harnessing the power of electricity has opened numerous horizons for development. But mere earthly ambitions are no longer enough. The stars themselves are now within reach. All you have to do is seize the opportunity.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>CAT_IndustrialSpark</li>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_UltraSpark</defName>
+    <label>spark of ingenuity</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Further and further your ambition grows. Extraordinary technologies from various sources are now at your fingertips, including the secrets to space flight. But it's not enough. The secrets of the universe must be laid bare before you. Advanced bionics, exotic structures, perhaps even the inner workings of hulking mechanoids. Every morsel of information is fair game.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>CAT_SpacerSpark</li>
+      <li>ShipCryptosleep</li>
+      <li>ShipReactor</li>
+      <li>ShipEngine</li>
+      <li>ShipComputerCore</li>
+      <li>ShipSensorCluster</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>CAT_ArchotechSpark</defName>
+    <label>spark of ascension</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Can one know the unknowable? Of course, the answer sounds obvious for an ordinary individual, but you are anything but ordinary.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>CAT_UltraSpark</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">UltraMechtech</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">NeuralComputation</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CircadianInfluence</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+<!--Building-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicStructures</defName>
@@ -22,7 +118,7 @@
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>CAT_Spark</li>
+      <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
     <researchViewY>4.75</researchViewY>
@@ -57,7 +153,7 @@
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
-  <!--Temperature-->
+<!--Temperature-->
 
   <ResearchProjectDef>
     <defName>CAT_Firemaking</defName>
@@ -67,13 +163,13 @@
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>CAT_Spark</li>
+      <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
     <researchViewY>5.5</researchViewY>
   </ResearchProjectDef>
 
-  <!--Production-->
+<!--Production-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicCrafting</defName>
@@ -83,7 +179,7 @@
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>CAT_Spark</li>
+      <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
     <researchViewY>0.75</researchViewY>
@@ -97,7 +193,7 @@
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>CAT_Spark</li>
+      <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
     <researchViewY>2.25</researchViewY>
@@ -111,9 +207,10 @@
     <baseCost>400</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>CAT_Spark</li>
+      <li>CAT_BasicButchering</li>
+      <li>CAT_BasicCrafting</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
+    <researchViewX>1</researchViewX>
     <researchViewY>2.25</researchViewY>
   </ResearchProjectDef>
 </Defs>
