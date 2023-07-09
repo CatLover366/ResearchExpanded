@@ -2,9 +2,9 @@
 
 <Defs>
 
-	<ResearchTabDef>
-		<defName>CAT_ResearchExpanded</defName>
-		<label>Research Expanded</label>
-	</ResearchTabDef>
+  <ResearchTabDef>
+    <defName>CAT_ResearchExpanded</defName>
+    <label>Research Expanded</label>
+  </ResearchTabDef>
 
 </Defs>

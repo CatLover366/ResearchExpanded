@@ -5,7 +5,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ResearchProjectDef[not(prerequisites)]</xpath>
     <value>
-      <prerequisites />
+      <prerequisites/>
     </value>
   </Operation>
 
