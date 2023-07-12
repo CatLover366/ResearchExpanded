@@ -19,7 +19,7 @@
     <label>spark of curiosity</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>A good foundation has been set, and large strides have been made, such that most natural predators cannot threaten you on their own. But while these primitive tools are good, they simply are not good enough. Why be satisfied with mere wood, when there is a bounty of stone and metal to exploit instead?</description>
-    <baseCost>100</baseCost>
+    <baseCost>250</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
@@ -69,7 +69,7 @@
     <label>spark of ingenuity</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>Further and further your ambition grows. Extraordinary technologies from various sources are now at your fingertips, including the secrets to space flight. But it's not enough. The secrets of the universe must be laid bare before you. Advanced bionics, exotic structures, perhaps even the inner workings of hulking mechanoids. Every morsel of information is fair game.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>2500</baseCost>
     <techLevel>Ultra</techLevel>
     <prerequisites>
       <li>CAT_SpacerSpark</li>
@@ -92,7 +92,7 @@
     <label>spark of ascension</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>Can one know the unknowable? Of course, the answer sounds obvious for an ordinary individual, but you are anything but ordinary.</description>
-    <baseCost>10000</baseCost>
+    <baseCost>5000</baseCost>
     <techLevel>Archotech</techLevel>
     <prerequisites>
       <li>CAT_UltraSpark</li>
@@ -114,8 +114,22 @@
     <defName>CAT_BasicStructures</defName>
     <label>basic structures</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Enough of working while exposed to the elements. Why not indulge in some of the basics of construction: simple walls and doors. They aren't exactly made to last, but they will protect you from the elements well enough.</description>
-    <baseCost>300</baseCost>
+    <description>Enough of working while exposed to the elements. Why not indulge in some of the basics of construction: walls. Quite simple, but they will protect you from the elements well enough.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_NeolithicSpark</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Doors</defName>
+    <label>Doors</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>The wall's more complex brother. Operating on hinges to swing open and closed allows people to enter and exit while fully sealing a room from the elements. A door is far more fragile than a regular wall, but that is the price of convenience.</description>
+    <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
@@ -129,7 +143,7 @@
     <label>basic flooring</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>A roof over your head and walls keeping the outdoors out is all well and good, but there is still one side of a room unaccounted for: the floor. Instead of having filth crunching underneath you all the time, one can simply lay down some wooden planks to not only liven up the place, but also keep your base hygienic.</description>
-    <baseCost>300</baseCost>
+    <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_BasicStructures</li>
@@ -139,15 +153,60 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>Cat_Bridges</defName>
+    <defName>CAT_Bridges</defName>
     <label>bridges</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Unfortunately, certain terrain isn't stable enough for regular flooring. However, simply placing some supports in the ground allows for light flooring to be laid on such unstable areas, though it is a fair bit more expensive.</description>
+    <description>Unfortunately, certain terrain isn't stable enough for regular flooring. However, placing some sturdy supports in the ground allows for light flooring to be laid on such unstable areas, though it is a fair bit more expensive.</description>
     <baseCost>400</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_BasicStructures</li>
       <li>CAT_BasicFlooring</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <!--Temperature-->
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicDefenses</defName>
+    <label>defensive cover</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Standing out in the open during a firefight is unsafe, and naturally occurring cover is not guaranteed to be in an ideal location. The clear solution is to build your own.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicStructures</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_AdvancedDefenses</defName>
+    <label>modern cover</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Standard barricades are slow to build, a fatal flaw if caught unawares. Sandbag fortifications are fast to assemble, ideal for setting up impromptu defenses or building a fortified bunker during offensive maneuvers.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Traps</defName>
+    <label>defensive cover</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Direct confrontation in combat works well, but it can also result in great injury. While setting up enough traps to take out an entire army is unrealistic, a few well placed traps can remove enough hostiles to make the difference between a glorious victory and a crushing defeat.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicCrafting</li>
+      <li>CAT_BasicStructures</li>
     </prerequisites>
     <researchViewX>3</researchViewX>
     <researchViewY>4</researchViewY>
@@ -169,13 +228,13 @@
     <researchViewY>5.5</researchViewY>
   </ResearchProjectDef>
 
-<!--Production-->
+  <!--Production-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicCrafting</defName>
     <label>basic crafting</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>While hands are a quite versatile tool, they can only go so far when it comes to more complex tasks. It would be far more effective to use those hands for creating tools that make working and killing easier.</description>
+    <description>While hands are a quite versatile tool, they can only go so far when it comes to more complex tasks. It would be far more efficient to use those hands for creating tools that make working and killing easier.</description>
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
@@ -190,7 +249,7 @@
     <label>primitive butchering</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>While eating raw corpses directly is... barely serviceable, it is highly nutrient inefficient and quite an unpleasant experience. It is far better to hew flesh from bone and properly butcher meat into separate chunks to either consume or prepare.</description>
-    <baseCost>300</baseCost>
+    <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
@@ -209,6 +268,213 @@
     <prerequisites>
       <li>CAT_BasicButchering</li>
       <li>CAT_BasicCrafting</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicCooking</defName>
+    <label>primitive cooking</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Raw foodstuffs are both generally unpleasant to eat and have the rather unfortunate tendency to give its consumers a quite violent case of food poisoning. By cooking your food over a fire, you can both improve the taste and (hopefully) remove the chance of food poisoning.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Firemaking</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Cooking</defName>
+    <label>food preparation</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Cooking over an open flame is fine for basic food, but if you want to actually cook something decently complex, then a more sophisticated cooking station is needed.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>CAT_MedievalSpark</li>
+      <li>CAT_BasicCooking</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_RecordKeeping</defName>
+    <label>record keeping</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While thinking on top of a glorified stone chunk has provided a suitable spot for research up to now, just having various papers and blueprints in a jumbled pile will not cut it for more complex research projects. It's time to organize those documents, and get a larger workspace as well.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>CAT_MedievalSpark</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <!--Crafting-->
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicMelee</defName>
+    <label>primitive melee weapons</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Normal human fists are a terrible weapon when it comes to melee combat. Even for a skilled fighter, they likely wouldn't be able to take out a dangerous enemy without sustaining heavy injury. Implements to amplify a person's lethal force is the answer. Even simple clubs and blades are far better than fighting barehanded.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicCrafting</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_ShortBow</defName>
+    <label>short bow</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Melee is good for stopping enemies from moving, but the unskilled and the physically frail are ill-suited to such things. A safer and effective alternative is ranged combat. A simple bow has low power and terrible accuracy, but it has the range to stay out of harm's way of a fist or blade.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicCrafting</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicClothing</defName>
+    <label>primitive clothing</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Being naked is bad for temperature regulation and protection. Even some simple clothes made from stitched together hides can both protect and insulate the wearer effectively</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicCrafting</li>
+      <li>CAT_BasicButchering</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <!--Furniture-->
+
+  <ResearchProjectDef>
+    <defName>CAT_BasicFurniture</defName>
+    <label>basic furniture</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While a room can protect you from the elements, it doesn't serve too much of a purpose if there isn't anything to put inside. Perhaps some basic amenities could remedy that.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicStructures</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Bedrolls</defName>
+    <label>bedrolls</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Sleeping on the floor is quite literally a pain in the neck. And back. Using that relatively soft leather for a comfortable sleeping spot seems like a good fix.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicButchering</li>
+      <li>CAT_BasicFurniture</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Artistry</defName>
+    <label>artistry</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While a basic hut can suffice for someone's basic needs, it is a bit dull. Letting a creatively inclined individual experiment with creating art could brighten the surroundings considerably.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicFurniture</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <!--Recreation-->
+
+  <ResearchProjectDef>
+    <defName>CAT_Recreation</defName>
+    <label>recreational games</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Basic meditation and conversation can only be so entertaining. Creating some games to play will offer a larger variety of entertainment.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_BasicFurniture</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <!--Plants-->
+
+  <ResearchProjectDef>
+    <defName>CAT_WildCultivation</defName>
+    <label>wild plant cultivation</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Running around the area to harvest food and medicine simply isn't practical. If you were to domesticate and grow them yourself, you could control the location of the plants you need.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_NeolithicSpark</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Agriculture</defName>
+    <label>agriculture</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Cultivated wild plants for food are not sustainable for large groups of people. Growing more high yield plants is a far more viable way to feed a sizable colony.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_WildCultivation</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Smokeleaf</defName>
+    <label>smokeleaf</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While plants for providing sustenance are important, they aren't exactly what a regular person would consider fun. What is fun, or at least isn't boring, is getting high. Smokeweed is a relatively safe recreational drug, perfect for improving morale with few medical ramifications, save for addiction. Just don't let someone with brain damage smoke it, or they might shut down their brain entirely.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Agriculture</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Psychoid</defName>
+    <label>psychoid</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>While plants for providing sustenance are important, they aren't exactly what a regular person would consider fun. What is fun, or at least isn't boring, is getting high. Psychoid takes a bit of effort to process into a usable drug, but has a variety of uses, from pleasure to medical.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Agriculture</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
     <researchViewY>2.25</researchViewY>
