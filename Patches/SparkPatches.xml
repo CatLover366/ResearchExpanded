@@ -16,4 +16,40 @@
       <li>CAT_NeolithicSpark</li>
     </value>
   </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[techLevel = "Medieval" and defName != "CAT_MedievalSpark"]/prerequisites[count(li) = 0]</xpath>
+    <value>
+      <li>CAT_MedievalSpark</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[techLevel = "Industrial" and defName != "CAT_IndustrialSpark"]/prerequisites[count(li) = 0]</xpath>
+    <value>
+      <li>CAT_IndustrialSpark</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[techLevel = "Spacer" and defName != "CAT_SpacerSpark"]/prerequisites[count(li) = 0]</xpath>
+    <value>
+      <li>CAT_SpacerSpark</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[techLevel = "Ultra" and defName != "CAT_UltraSpark"]/prerequisites[count(li) = 0]</xpath>
+    <value>
+      <li>CAT_UltraSpark</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[techLevel = "Archotech" and defName != "CAT_ArchotechSpark"]/prerequisites[count(li) = 0]</xpath>
+    <value>
+      <li>CAT_ArchotechSpark</li>
+    </value>
+  </Operation>
+
 </Patch>

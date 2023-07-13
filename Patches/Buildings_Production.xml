@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "CraftingSpot"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_BasicCrafting</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "ButcherSpot"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_BasicButchering</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "TableSculpting"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_Artistry</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "TableButcher"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_Butchering</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "FueledStove"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_Cooking</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "SimpleResearchBench"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_RecordKeeping</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+</Patch>

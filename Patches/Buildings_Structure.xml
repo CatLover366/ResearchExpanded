@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Door"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_Doors</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Wall"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_BasicStructures</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Column"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_BasicStructures</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "AnimalFlap"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_AnimalHusbandry</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Fence"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_AnimalHusbandry</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "FenceGate"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_AnimalHusbandry</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+</Patch>

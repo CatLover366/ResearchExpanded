@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <!-- Add Research -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Club" or defName = "MeleeWeapon_Knife"]/recipeMaker</xpath>
+    <value>
+      <researchPrerequisite>CAT_BasicMelee</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Bow_Short" or defName = "Pila"]/recipeMaker</xpath>
+    <value>
+      <researchPrerequisite>CAT_BasicRanged</researchPrerequisite>
+    </value>
+  </Operation>
+  
+  <!-- Add crafting spot -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Pila"]/recipeMaker</xpath>
+    <value>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+
+</Patch>

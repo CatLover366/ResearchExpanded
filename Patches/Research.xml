@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!--Changing prerequisites-->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="DrugProduction"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_Smokeleaf</li>
+        <li>CAT_Psychoid</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_Smokeleaf</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_WildCultivation</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_Agriculture</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_Agriculture</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_BasicCooking</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_BasicRanged</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_RecordKeeping</li>
+        <li>CAT_MedievalSpark</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_BasicFlooring</li>
+        <li>CAT_Cotton</li>
+        <li>CAT_MedievalSpark</li>
+      </prerequisites>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "IEDs"]/prerequisites</xpath>
+    <value>
+      <prerequisites>
+        <li>Machining</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+    <value>
+      <prerequisites>
+        <li>CAT_BasicCrafting</li>
+        <li>CAT_MedievalSpark</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+  <!-- Adding required research buidling -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName = "ComplexFurniture" or defName = "Smithing" or defName = "DrugProduction"]</xpath>
+    <value>
+      <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ResearchProjectDef[defName = "Harp"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName = "Harp" or defName = "Harpsichord" or defName = "Piano" or defName = "NobleApparel" or defName = "RoyalApparel"]</xpath>
+      <value>
+        <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

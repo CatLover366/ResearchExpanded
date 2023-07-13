@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Grave"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>CAT_Burial</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "PenMarker"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_AnimalHusbandry</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "EggBox"]</xpath>
+    <value>
+    <researchPrerequisites>
+      <li>CAT_AnimalHusbandry</li>
+    </researchPrerequisites>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Ideology</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/ResearchProjectDef[defName = "CAT_BasicStructures"]</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>CAT_Ideology</defName>
+              <label>ideology</label>
+              <tab>CAT_ResearchExpanded</tab>
+              <description>Your researcher has finally figured out a way to minimize the existing hydroponics technology, resulting in the creation of the mini hydroponics bay.</description>
+              <baseCost>200</baseCost>
+              <techLevel>Neolithic</techLevel>
+              <prerequisites>
+                <li>CAT_Burial</li>
+              </prerequisites>
+              <researchViewX>1</researchViewX>
+              <researchViewY>2.25</researchViewY>
+            </ResearchProjectDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Altar_Small"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Altar_Medium"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Altar_Large"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Altar_Grand"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Ideogram"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ChristmasTree"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "CannibalPlatter"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Effigy"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "SacrificialFlag"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Pyre"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Burnbong"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Smokeleaf</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "IncenseShrine"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Smokeleaf</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "RitualSpot"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Lectern"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "GibbetCage"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Skullspike"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Drum"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Pew"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "KneelSheet"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "KneelPillow"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "Autobong"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Smokeleaf</li>
+              <li>MicroelectronicsBasics</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Plant_Nutrifungus" or defName = "Plant_Fibercorn" or defName = "Plant_Tinctora"]/plant</xpath>
+          <value>
+            <sowResearchPrerequisites>
+              <li>CAT_Agriculture</li>
+            </sowResearchPrerequisites>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
