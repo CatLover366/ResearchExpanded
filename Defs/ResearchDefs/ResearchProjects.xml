@@ -114,7 +114,7 @@
     <defName>CAT_BasicStructures</defName>
     <label>basic structures</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Enough of working while exposed to the elements. Why not indulge in some of the basics of construction: walls. Quite simple, but they will protect you from the elements well enough.</description>
+    <description>Enough of working while exposed to the elements. Why not indulge in some of the basics of construction: walls and supports. Quite simple, but they will protect you and hold up a roof well enough.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
@@ -126,13 +126,27 @@
 
   <ResearchProjectDef>
     <defName>CAT_Doors</defName>
-    <label>Doors</label>
+    <label>doors</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>The wall's more complex brother. Operating on hinges to swing open and closed allows people to enter and exit while fully sealing a room from the elements. A door is far more fragile than a regular wall, but that is the price of convenience.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>CAT_NeolithicSpark</li>
+      <li>CAT_BasicStructures</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4.75</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_AnimalHusbandry</defName>
+    <label>animal husbandry</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Certain types of animals cannot be left alone to wander around, unless you would like then to wander off. Building specialized pens and coops to contain them will keep your livestock in one place.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Doors</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
     <researchViewY>4.75</researchViewY>
@@ -153,6 +167,20 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>CAT_StonePaths</defName>
+    <label>stone paths</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Walking on natural terrain is slower than walking on manmade terrain. Creating pathways by haphazardly placing smooth rocks down is both a time and cost efficient method to connect buildings.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Stonecutting</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>CAT_Bridges</defName>
     <label>bridges</label>
     <tab>CAT_ResearchExpanded</tab>
@@ -167,7 +195,21 @@
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
-  <!--Temperature-->
+  <ResearchProjectDef>
+    <defName>CAT_Burial</defName>
+    <label>honor the dead</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>The idea of leaving the bodies of your fellow comrades just lying around seems... wrong. A final place of rest would be far better suited to honor their memory.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_NeolithicSpark</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <!--Security-->
 
   <ResearchProjectDef>
     <defName>CAT_BasicDefenses</defName>
@@ -192,6 +234,7 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Gunsmithing</li>
+      <li>CAT_BasicDefenses</li>
     </prerequisites>
     <researchViewX>3</researchViewX>
     <researchViewY>4</researchViewY>
@@ -199,7 +242,7 @@
 
   <ResearchProjectDef>
     <defName>CAT_Traps</defName>
-    <label>defensive cover</label>
+    <label>traps</label>
     <tab>CAT_ResearchExpanded</tab>
     <description>Direct confrontation in combat works well, but it can also result in great injury. While setting up enough traps to take out an entire army is unrealistic, a few well placed traps can remove enough hostiles to make the difference between a glorious victory and a crushing defeat.</description>
     <baseCost>300</baseCost>
@@ -333,10 +376,10 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>CAT_ShortBow</defName>
-    <label>short bow</label>
+    <defName>CAT_BasicRanged</defName>
+    <label>primitive ranged weapons</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Melee is good for stopping enemies from moving, but the unskilled and the physically frail are ill-suited to such things. A safer and effective alternative is ranged combat. A simple bow has low power and terrible accuracy, but it has the range to stay out of harm's way of a fist or blade.</description>
+    <description>Melee is good for stopping enemies from moving, but the unskilled and the physically frail are ill-suited to such things. A safer and effective alternative is ranged combat. Simple bows and pilum are unwieldy and somewhat ineffective, but they have the range to stay out of harm's way of a fist or blade.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
@@ -350,7 +393,7 @@
     <defName>CAT_BasicClothing</defName>
     <label>primitive clothing</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Being naked is bad for temperature regulation and protection. Even some simple clothes made from stitched together hides can both protect and insulate the wearer effectively</description>
+    <description>Being naked is bad for temperature regulation and protection. Even some simple clothes made from stitched together hides and wood can both protect and insulate the wearer effectively.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
@@ -479,4 +522,19 @@
     <researchViewX>1</researchViewX>
     <researchViewY>2.25</researchViewY>
   </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CAT_Cotton</defName>
+    <label>cotton</label>
+    <tab>CAT_ResearchExpanded</tab>
+    <description>Leather is tough, but can be hard to come by at times. Cotton, however, can be easily planted in large swathes to produce cloth. While cloth is less protective and insulating than most animal pelts, it has some specific uses that cannot be substituted by leather.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>CAT_Agriculture</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+
 </Defs>
