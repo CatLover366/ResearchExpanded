@@ -11,7 +11,7 @@
 	<OutputPath>.\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <ReleaseFiles Include="Defs\**;Patches\**;About\**;1.4\**;loadFolders.xml;README.md;LICENSE" Exclude="1.*\Source\**" />
+    <ReleaseFiles Include="Defs\**;Patches\**;About\**;1.4\**;loadFolders.xml;README.md;LICENSE" Exclude="1.*\Source\**;1.*\Assemblies\*.pdb" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
