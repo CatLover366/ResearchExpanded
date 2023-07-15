@@ -17,6 +17,9 @@
     <None Include=".gitignore" />
     <None Include=".gitattributes" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.4\Assemblies\" />
+  </ItemGroup>
   <Target Name="Clean" />
   <Target Name="Build">
     <Copy Condition=" '$(Configuration)' == 'Release' " SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
