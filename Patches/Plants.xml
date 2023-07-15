@@ -24,7 +24,7 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "Plant_Healroot" or defName = "Plant_Rose" or defName = "Plant_Daylily" or defName = "Plant_Dandelion"]/plant</xpath>
+    <xpath>/Defs/ThingDef[defName = "Plant_Healroot" or defName = "Plant_Potato" or defName = "Plant_Rose" or defName = "Plant_Daylily" or defName = "Plant_Dandelion"]/plant</xpath>
     <value>
       <sowResearchPrerequisites>
         <li>CAT_WildCultivation</li>
@@ -35,7 +35,7 @@
 <!--Agriculture-->
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "Plant_Rice" or defName = "Plant_Potato" or defName = "Plant_Corn" or defName = "Plant_Haygrass" or defName = "Plant_Hops"]/plant</xpath>
+    <xpath>/Defs/ThingDef[defName = "Plant_Rice" or defName = "Plant_Corn" or defName = "Plant_Haygrass" or defName = "Plant_Hops"]/plant</xpath>
     <value>
       <sowResearchPrerequisites>
         <li>CAT_Agriculture</li>
