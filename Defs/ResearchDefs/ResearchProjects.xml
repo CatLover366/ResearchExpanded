@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
 
   <!--Tech level sparks-->
+  <ResearchProjectTagDef>
+    <defName>CAT_ResearchExpandedSpark</defName>
+  </ResearchProjectTagDef>
 
   <ResearchProjectDef>
     <defName>CAT_NeolithicSpark</defName>
@@ -12,6 +16,9 @@
     <techLevel>Neolithic</techLevel>
     <researchViewX>0</researchViewX>
     <researchViewY>2.5</researchViewY>
+    <tags>
+      <li>CAT_ResearchExpandedSpark</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -26,6 +33,9 @@
     </prerequisites>
     <researchViewX>1</researchViewX>
     <researchViewY>2.5</researchViewY>
+    <tags>
+      <li>CAT_ResearchExpandedSpark</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -43,6 +53,9 @@
     </prerequisites>
     <researchViewX>2</researchViewX>
     <researchViewY>2.5</researchViewY>
+    <tags>
+      <li>CAT_ResearchExpandedSpark</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -62,6 +75,9 @@
     </requiredResearchFacilities>
     <researchViewX>3</researchViewX>
     <researchViewY>2.5</researchViewY>
+    <tags>
+      <li>CAT_ResearchExpandedSpark</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -85,8 +101,11 @@
     </requiredResearchFacilities>
     <researchViewX>4</researchViewX>
     <researchViewY>2.5</researchViewY>
+    <tags>
+      <li>CAT_ResearchExpandedSpark</li>
+    </tags>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef>
     <defName>CAT_ArchotechSpark</defName>
     <label>spark of ascension</label>
@@ -106,6 +125,9 @@
     </requiredResearchFacilities>
     <researchViewX>5</researchViewX>
     <researchViewY>2.5</researchViewY>
+    <tags>
+      <li>CAT_ResearchExpandedSpark</li>
+    </tags>
   </ResearchProjectDef>
 
   <!--Building-->
