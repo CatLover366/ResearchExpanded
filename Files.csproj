@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>.vs\unused\</BaseIntermediateOutputPath>
+    <ProjectGuid>{AA1EF112-E817-4ED1-849A-EE55B8DAF3C0}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+	<OutputPath>.\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ReleaseFiles Include="Defs\**;Patches\**;About\**;1.4\**;loadFolders.xml;README.md;LICENSE" Exclude="1.*\Source\**;1.*\Assemblies\*.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".gitattributes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.4\Assemblies\" />
+  </ItemGroup>
+  <Target Name="Clean" />
+  <Target Name="Build">
+    <Copy Condition=" '$(Configuration)' == 'Release' " SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="Rebuild" />
+  <Target Name="PostBuild" AfterTargets="Build">
+    <RemoveDir Directories="obj" />
+    <ZipDirectory SourceDirectory=".\Release" DestinationFile="ResearchExpanded.zip" Overwrite="true" Condition=" '$(Configuration)' == 'Release' " />
+  </Target>
+</Project>
