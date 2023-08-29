@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Fortifications - Neolithic</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name = "FT_Palisade_Base"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FT_PalisadeDoor"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FT_CavalrySpike"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicDefenses</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FT_Ditch"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicDefenses</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

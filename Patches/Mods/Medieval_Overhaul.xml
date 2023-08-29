@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName = "DankPyon_Lumber"]/techLevel</xpath>
+          <value>
+              <techLevel>Neolithic</techLevel>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName = "DankPyon_BasicCooking"]/techLevel</xpath>
+          <value>
+              <techLevel>Medieval</techLevel>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicCooking"]/prerequisites</xpath>
+          <value>
+              <li>CAT_Cooking</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ResearchProjectDef[defName="DankPyon_LeatherTanning"]/prerequisites</xpath>
+          <value>
+              <li>CAT_BasicButchering</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ResearchProjectDef[defName="DankPyon_BasicAgriculture"]/prerequisites</xpath>
+          <value>
+              <li>CAT_Agriculture</li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="CAT_Agriculture"]/label</xpath>
+          <value>
+              <label>primitive agriculture</label>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "SimpleResearchBench"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_RecordKeeping</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "TableSculpting"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Artistry</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "FueledStove"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Cooking</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_ResearchingSpot"]</xpath>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_StonecuttingSpot"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>Stonecutting</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_ButchersBlock"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Butchering</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_MiningSpot"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicCooking</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_RusticCookingTable"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Cooking</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Workbench"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>ComplexFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_CleaningBench"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>ComplexFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_DryRack"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_LeatherTanning</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_RusticDoor"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogWall"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogColumn"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogGate"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Doors</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Frame_Log"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Doors</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Gate"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RoyalRusticFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_RoyalColumn"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RoyalRusticFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_SlabDoor"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>Stonecutting</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_HideTentWall"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_LeatherTanning</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_TentWall"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Cotton</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Palisade"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_EmbPalisade"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicDefenses</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_CavalrySpike"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicDefenses</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Trench"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicDefenses</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_WoodLogs1x1c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_WoodLogs1x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_WoodLogs2x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Timber1x1c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Timber1x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Timber2x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Bricks1x1c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Bricks1x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Bricks2x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>DankPyon_RusticStorage</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_BedLog"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogTable1x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogTable1x3c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogTable1x4c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogTable2x4c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogChair"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogBench1x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogBench1x3c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LogBench1x4c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFurniture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_WallTorch"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Firemaking</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

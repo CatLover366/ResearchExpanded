@@ -15,15 +15,44 @@
               <defName>CAT_Ideology</defName>
               <label>ideology</label>
               <tab>CAT_ResearchExpanded</tab>
-              <description>Your researcher has finally figured out a way to minimize the existing hydroponics technology, resulting in the creation of the mini hydroponics bay.</description>
+              <description>What is a civilization without culture? And what good is culture if you cannot spread it far and wide? Word of mouth is hardly enough to promote your ideology. Iconography and ritual furniture is perfect to improve the strength of your beliefs.</description>
               <baseCost>200</baseCost>
               <techLevel>Neolithic</techLevel>
               <prerequisites>
                 <li>CAT_Burial</li>
               </prerequisites>
-              <researchViewX>1</researchViewX>
-              <researchViewY>2.25</researchViewY>
+              <researchViewX>6</researchViewX>
+              <researchViewY>4.5</researchViewY>
             </ResearchProjectDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name = "BuildingFloorCoveringBase"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[@Name = "IdeoStoneTileBase"]/researchPrerequisites</xpath>
+          <value>
+              <li>CAT_Ideology</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[@Name = "IdeoCarpetBase"]/researchPrerequisites</xpath>
+          <value>
+              <li>CAT_Ideology</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName = "Tile_Transhumanist"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Ideology</li>
+              <li>Smithing</li>
+            </researchPrerequisites>
           </value>
         </li>
         <li Class="PatchOperationAdd">

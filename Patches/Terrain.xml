@@ -6,7 +6,7 @@
     <xpath>/Defs/TerrainDef[@Name = "FlagstoneBase"]</xpath>
     <value>
       <researchPrerequisites>
-        <li>CAT_StonePaths</li>
+        <li>Stonecutting</li>
       </researchPrerequisites>
     </value>
   </Operation>
