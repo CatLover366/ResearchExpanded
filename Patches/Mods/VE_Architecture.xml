@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Architect</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/ResearchProjectDef[defName = "CAT_BasicStructures"]</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>CAT_FineArchitecture</defName>
+              <label>fine architecture</label>
+              <tab>CAT_ResearchExpanded</tab>
+              <description>Basic structures are serviceable enough to make a house, but if you want a palace, they simply will not do. Investing more time and resources can create some truly breathtaking architecture.</description>
+              <baseCost>500</baseCost>
+              <techLevel>Medieval</techLevel>
+              <prerequisites>
+                <li>CAT_Doors</li>
+                <li>CAT_BasicFlooring</li>
+              </prerequisites>
+              <researchViewX>7</researchViewX>
+              <researchViewY>0</researchViewY>
+            </ResearchProjectDef>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_LogWall"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_PicketFence"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicStructures</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_LowFence"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_AnimalHusbandry</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_AnimalGate"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_AnimalHusbandry</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_SingleDoor"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Doors</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_SingleDoor_Flipped"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_Doors</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_HedgeWall"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+          <xpath>/Defs/ThingDef[defName = "VFEArch_FineWall"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_Grass"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_LawnPlot"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_WoodPlankFloorWalnut"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFlooring</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_WoodPlankFloorBirch"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFlooring</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_WoodPlankFloorMahogany"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_BasicFlooring</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[@Name = "VFEArch_WoodenParquetBase"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_FineWoodenFloor"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_FineWoodenFloorWalnut"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_FineWoodenFloorBirch"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+          <xpath>/Defs/TerrainDef[defName = "VFEArch_FineWoodenFloorMahogany"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>CAT_FineArchitecture</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[@Name = "CobblestoneBase"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>Stonecutting</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[@Name = "SteelBridgeBase"]</xpath>
+          <value>
+            <researchPrerequisites>
+              <li>Smithing</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+
+
+</Patch>

@@ -15,7 +15,7 @@
     <baseCost>5</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>0</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewY>2.25</researchViewY>
     <tags>
       <li>CAT_ResearchExpandedSpark</li>
     </tags>
@@ -25,14 +25,17 @@
     <defName>CAT_MedievalSpark</defName>
     <label>spark of curiosity</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>A good foundation has been set, and large strides have been made, such that most natural predators cannot threaten you on their own. But while these primitive tools are good, they simply are not good enough. Why be satisfied with mere wood, when there is a bounty of stone and metal to exploit instead?</description>
+    <description>A good foundation has been set, and large strides have been made, such that most natural predators cannot threaten you on their own. But while these primitive tools are good, they simply are not enough. Why be satisfied with mere wood, when there is a bounty of stone and metal to exploit instead?</description>
     <baseCost>250</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
+      <li>CAT_Burial</li>
+      <li>CAT_Cooking</li>
+      <li>CAT_Bridges</li>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewY>2.25</researchViewY>
     <tags>
       <li>CAT_ResearchExpandedSpark</li>
     </tags>
@@ -42,7 +45,7 @@
     <defName>CAT_IndustrialSpark</defName>
     <label>spark of innovation</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>The bounty of the earth itself has been worked to your favor. Leaps and bounds of progress has been made for crafting and forging. However, the human mind and body can only go so far on its own. It is time to develop more advanced tools to assist with both production and data gathering.</description>
+    <description>The bounty of the earth itself has been worked to your favor. Leaps and bounds of progress has been made for crafting and forging. However, the human mind and body can only go so far on its own. It is time to develop more advanced tools to go beyond the human limit.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -51,8 +54,8 @@
       <li>ComplexFurniture</li>
       <li>Stonecutting</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2.25</researchViewY>
     <tags>
       <li>CAT_ResearchExpandedSpark</li>
     </tags>
@@ -62,7 +65,7 @@
     <defName>CAT_SpacerSpark</defName>
     <label>spark of wonder</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Harnessing the power of electricity has opened numerous horizons for development. But mere earthly ambitions are no longer enough. The stars themselves are now within reach. All you have to do is seize the opportunity.</description>
+    <description>Harnessing the power of electricity has opened numerous horizons for development. But mere earthly ambitions are no longer enough. The stars themselves are now within reach. All one has to do is seize the opportunity.</description>
     <baseCost>1000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
@@ -73,8 +76,8 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>3</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2.25</researchViewY>
     <tags>
       <li>CAT_ResearchExpandedSpark</li>
     </tags>
@@ -99,8 +102,8 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>4</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.25</researchViewY>
     <tags>
       <li>CAT_ResearchExpandedSpark</li>
     </tags>
@@ -110,7 +113,7 @@
     <defName>CAT_ArchotechSpark</defName>
     <label>spark of ascension</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Can one know the unknowable? Of course, the answer sounds obvious for an ordinary individual, but you are anything but ordinary.</description>
+    <description>Can one know the unknowable? Of course, the answer sounds obvious for an ordinary individual, but to get to this point, one has to be far from ordinary. Break all known barriers and blaze a new trail into the unknown.</description>
     <baseCost>5000</baseCost>
     <techLevel>Archotech</techLevel>
     <prerequisites>
@@ -123,8 +126,8 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>5</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewX>6</researchViewX>
+    <researchViewY>2.25</researchViewY>
     <tags>
       <li>CAT_ResearchExpandedSpark</li>
     </tags>
@@ -136,14 +139,14 @@
     <defName>CAT_BasicStructures</defName>
     <label>basic structures</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Enough of working while exposed to the elements. Why not indulge in some of the basics of construction: walls and supports. Quite simple, but they will protect you and hold up a roof well enough.</description>
+    <description>Enough of working while exposed to the elements. Why not indulge in some of the fundamentals of construction: walls and supports. Quite simple, but they will protect you and hold up a roof well enough.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
-    <researchViewY>4.75</researchViewY>
+    <researchViewY>0.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -156,22 +159,22 @@
     <prerequisites>
       <li>CAT_BasicStructures</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>4.75</researchViewY>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>CAT_AnimalHusbandry</defName>
     <label>animal husbandry</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Certain types of animals cannot be left alone to wander around, unless you would like then to wander off. Building specialized pens and coops to contain them will keep your livestock in one place.</description>
+    <description>Certain types of animals cannot be left unattended, unless you would like then to wander off. Building specialized pens and coops to contain them will keep your livestock in one place without constant monitoring.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_Doors</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>4.75</researchViewY>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -185,21 +188,7 @@
       <li>CAT_BasicStructures</li>
     </prerequisites>
     <researchViewX>2</researchViewX>
-    <researchViewY>4</researchViewY>
-  </ResearchProjectDef>
-
-  <ResearchProjectDef>
-    <defName>CAT_StonePaths</defName>
-    <label>stone paths</label>
-    <tab>CAT_ResearchExpanded</tab>
-    <description>Walking on natural terrain is slower than walking on manmade terrain. Creating pathways by haphazardly placing smooth rocks down is both a time and cost efficient method to connect buildings.</description>
-    <baseCost>200</baseCost>
-    <techLevel>Medieval</techLevel>
-    <prerequisites>
-      <li>Stonecutting</li>
-    </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -213,8 +202,8 @@
       <li>CAT_BasicStructures</li>
       <li>CAT_BasicFlooring</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -227,8 +216,8 @@
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4.5</researchViewY>
   </ResearchProjectDef>
 
   <!--Security-->
@@ -244,7 +233,7 @@
       <li>CAT_BasicStructures</li>
     </prerequisites>
     <researchViewX>3</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -258,8 +247,8 @@
       <li>Gunsmithing</li>
       <li>CAT_BasicDefenses</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -273,8 +262,8 @@
       <li>CAT_BasicCrafting</li>
       <li>CAT_BasicStructures</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>4</researchViewY>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
   <!--Temperature-->
@@ -289,8 +278,8 @@
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>5.5</researchViewY>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3.5</researchViewY>
   </ResearchProjectDef>
 
   <!--Production-->
@@ -299,72 +288,72 @@
     <defName>CAT_BasicCrafting</defName>
     <label>basic crafting</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>While hands are a quite versatile tool, they can only go so far when it comes to more complex tasks. It would be far more efficient to use those hands for creating tools that make working and killing easier.</description>
+    <description>While hands are a quite versatile tool, they can only go so far when it comes to more complex tasks. It would be far more efficient to use those hands to create tools that make working and killing easier.</description>
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>0</researchViewX>
-    <researchViewY>0.75</researchViewY>
+    <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>CAT_BasicButchering</defName>
     <label>primitive butchering</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>While eating raw corpses directly is... barely serviceable, it is highly nutrient inefficient and quite an unpleasant experience. It is far better to hew flesh from bone and properly butcher meat into separate chunks to either consume or prepare.</description>
+    <description>While eating raw corpses directly is... serviceable, it is highly nutrient inefficient and quite an unpleasant experience. It is far better to hew flesh from bone and properly butcher meat into separate chunks to either consume or prepare.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
-    <researchViewX>0</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>CAT_Butchering</defName>
     <label>butchering</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>While properly butchering meat is a vast improvement over just eating a corpse directly, the process can still be refined. Simply pulling bodies apart with bare hands is both a tough and inefficient process. Creating a dedicated workbench equipped with proper tools is far better for harvesting as much meat as possible.</description>
+    <description>While separating meat into pieces is a vast improvement over just eating a corpse directly, the process can still be refined. Simply pulling bodies apart with bare hands is both a tough and inefficient process. Creating a dedicated workbench equipped with proper tools is far better for harvesting as much meat as possible.</description>
     <baseCost>400</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_BasicButchering</li>
       <li>CAT_BasicCrafting</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>CAT_BasicCooking</defName>
     <label>primitive cooking</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Raw foodstuffs are both generally unpleasant to eat and have the rather unfortunate tendency to give its consumers a quite violent case of food poisoning. By cooking your food over a fire, you can both improve the taste and (hopefully) remove the chance of food poisoning.</description>
+    <description>Raw foodstuffs are both generally unpleasant to eat and have the rather unfortunate tendency to give its consumers a violent case of illness. By cooking your food over a fire, you can both improve the taste and (hopefully) remove the chance of food poisoning.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_Firemaking</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>5</researchViewX>
+    <researchViewY>3.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>CAT_Cooking</defName>
     <label>food preparation</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Cooking over an open flame is fine for basic food, but if you want to actually cook something decently complex, then a more sophisticated cooking station is needed.</description>
+    <description>Cooking over an open flame is fine for basic food, but if you want to actually make something more complex, then a more sophisticated cooking station is needed.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>CAT_MedievalSpark</li>
       <li>CAT_BasicCooking</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>6</researchViewX>
+    <researchViewY>3.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -377,7 +366,7 @@
     <prerequisites>
       <li>CAT_MedievalSpark</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
+    <researchViewX>2</researchViewX>
     <researchViewY>2.25</researchViewY>
   </ResearchProjectDef>
 
@@ -394,7 +383,7 @@
       <li>CAT_BasicCrafting</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewY>4.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -407,8 +396,8 @@
     <prerequisites>
       <li>CAT_BasicCrafting</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -422,8 +411,8 @@
       <li>CAT_BasicCrafting</li>
       <li>CAT_BasicButchering</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4.5</researchViewY>
   </ResearchProjectDef>
 
   <!--Furniture-->
@@ -438,8 +427,8 @@
     <prerequisites>
       <li>CAT_BasicStructures</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -453,8 +442,8 @@
       <li>CAT_BasicButchering</li>
       <li>CAT_BasicFurniture</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -467,8 +456,8 @@
     <prerequisites>
       <li>CAT_BasicFurniture</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>6</researchViewX>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <!--Recreation-->
@@ -483,8 +472,8 @@
     <prerequisites>
       <li>CAT_BasicFurniture</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <!--Plants-->
@@ -493,14 +482,14 @@
     <defName>CAT_WildCultivation</defName>
     <label>wild plant cultivation</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>Running around the area to harvest food and medicine simply isn't practical. If you were to domesticate and grow them yourself, you could control the location of the plants you need.</description>
+    <description>Running around the area to harvest food and medicine simply isn't practical. If you were to domesticate and grow them yourself, you could control the location and number of the plants you need.</description>
     <baseCost>200</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_NeolithicSpark</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewY>5.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -513,22 +502,22 @@
     <prerequisites>
       <li>CAT_WildCultivation</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>2</researchViewX>
+    <researchViewY>5.5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>CAT_Smokeleaf</defName>
     <label>smokeleaf</label>
     <tab>CAT_ResearchExpanded</tab>
-    <description>While plants for providing sustenance are important, they aren't exactly what a regular person would consider fun. What is fun, or at least isn't boring, is getting high. Smokeweed is a relatively safe recreational drug, perfect for improving morale with few medical ramifications, save for addiction. Just don't let someone with brain damage smoke it, or they might shut down their brain entirely.</description>
+    <description>While plants for providing sustenance are important, they aren't exactly what a regular person would consider fun. What is fun, or at least isn't boring, is getting high. Smokeweed is a relatively safe recreational drug, perfect for improving morale with few medical ramifications, save for addiction. Just don't let someone with brain damage smoke it, or it might shut down their brain entirely.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
       <li>CAT_Agriculture</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>5</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -541,8 +530,8 @@
     <prerequisites>
       <li>CAT_Agriculture</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>6</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -555,8 +544,8 @@
     <prerequisites>
       <li>CAT_Agriculture</li>
     </prerequisites>
-    <researchViewX>1</researchViewX>
-    <researchViewY>2.25</researchViewY>
+    <researchViewX>3</researchViewX>
+    <researchViewY>5.5</researchViewY>
   </ResearchProjectDef>
 
 </Defs>
